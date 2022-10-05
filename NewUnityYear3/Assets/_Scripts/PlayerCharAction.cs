@@ -194,6 +194,15 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Save"",
+                    ""type"": ""Button"",
+                    ""id"": ""1dff91ab-af7a-4ff3-baf6-cae857b6cf7a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -240,6 +249,17 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                     ""action"": ""Dropitem"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1fa8dfd2-0540-4c0e-ad34-a492cfc6c8d4"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Save"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -258,6 +278,7 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         m_Editor_Additem1 = m_Editor.FindAction("Additem1", throwIfNotFound: true);
         m_Editor_Additem2 = m_Editor.FindAction("Additem2", throwIfNotFound: true);
         m_Editor_Dropitem = m_Editor.FindAction("Dropitem", throwIfNotFound: true);
+        m_Editor_Save = m_Editor.FindAction("Save", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -378,6 +399,7 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_Editor_Additem1;
     private readonly InputAction m_Editor_Additem2;
     private readonly InputAction m_Editor_Dropitem;
+    private readonly InputAction m_Editor_Save;
     public struct EditorActions
     {
         private @PlayerCharAction m_Wrapper;
@@ -386,6 +408,7 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         public InputAction @Additem1 => m_Wrapper.m_Editor_Additem1;
         public InputAction @Additem2 => m_Wrapper.m_Editor_Additem2;
         public InputAction @Dropitem => m_Wrapper.m_Editor_Dropitem;
+        public InputAction @Save => m_Wrapper.m_Editor_Save;
         public InputActionMap Get() { return m_Wrapper.m_Editor; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -407,6 +430,9 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                 @Dropitem.started -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
                 @Dropitem.performed -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
                 @Dropitem.canceled -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
+                @Save.started -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
+                @Save.performed -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
+                @Save.canceled -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
             }
             m_Wrapper.m_EditorActionsCallbackInterface = instance;
             if (instance != null)
@@ -423,6 +449,9 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                 @Dropitem.started += instance.OnDropitem;
                 @Dropitem.performed += instance.OnDropitem;
                 @Dropitem.canceled += instance.OnDropitem;
+                @Save.started += instance.OnSave;
+                @Save.performed += instance.OnSave;
+                @Save.canceled += instance.OnSave;
             }
         }
     }
@@ -440,5 +469,6 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         void OnAdditem1(InputAction.CallbackContext context);
         void OnAdditem2(InputAction.CallbackContext context);
         void OnDropitem(InputAction.CallbackContext context);
+        void OnSave(InputAction.CallbackContext context);
     }
 }

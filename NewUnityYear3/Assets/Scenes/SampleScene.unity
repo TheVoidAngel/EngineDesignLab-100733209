@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 1069221125}
   - component: {fileID: 1069221126}
   - component: {fileID: 1069221127}
+  - component: {fileID: 1069221128}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1029,8 +1030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 963194227}
   editorCam: {fileID: 24092493}
-  prefab1: {fileID: 0}
-  prefab2: {fileID: 0}
+  prefab1: {fileID: 27984058477262066, guid: bd36db9eb47d2374dba257593d44ebbd, type: 3}
+  prefab2: {fileID: 562592978346293004, guid: b75e81d4c3ca90c45a7d0ba36aea50fd, type: 3}
   editorMode: 0
 --- !u!114 &1069221127
 MonoBehaviour:
@@ -1042,6 +1043,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2095b997810d9844c8f318c73a0a66c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1069221128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069221123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b436c087d05b15b449bd1e006c547c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1093907239 stripped

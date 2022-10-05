@@ -18,20 +18,14 @@ public class EditorManager : MonoBehaviour
     public bool editorMode = false;
     bool instatiated = false;
 
-    private void OnEnable()
-    {
-        inputAction.Enable();
-    }
+    Vector3 mousePos;
 
-    private void OnDisable()
-    {
-        inputAction.Disable();
-    }
+    Subject subject = new Subject();
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        inputAction = new PlayerCharAction();
+        inputAction = PlayerInputController.controller.inputAction;
 
         inputAction.Editor.EnableEditor.performed += cntxt => SwitchCamera();
 
@@ -56,20 +50,33 @@ public class EditorManager : MonoBehaviour
             {
                 case 1:
                     item = Instantiate(prefab1);
+                    SpikeBall spike1 = new SpikeBall(item, new GreenMat());
+                    subject.AddObserver(spike1);
                     break;
                 case 2:
                     item= Instantiate(prefab2);
+                    SpikeBall spike2 = new SpikeBall(item, new YellowMat());
+                    subject.AddObserver(spike2);
                     break;
                 default:
                     break;
             }
+
+            subject.Notify();
+
             instatiated = true;
         }
     }
 
     private void DropItem()
     {
+        if (editorMode && instatiated)
+        {
+            item.GetComponent<Rigidbody>().useGravity = true;
+            item.GetComponent<Collider>().enabled = true;
 
+            instatiated = false;
+        }
     }
 
     // Update is called once per frame
@@ -86,6 +93,14 @@ public class EditorManager : MonoBehaviour
             editorMode = false;
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        if(instatiated)
+        {
+            mousePos = Mouse.current.position.ReadValue();
+            mousePos = new Vector3(mousePos.x, mousePos.y, 26f);
+
+            item.transform.position = editorCam.ScreenToWorldPoint(mousePos);
         }
     }
 }
