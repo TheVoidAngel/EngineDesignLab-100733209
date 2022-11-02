@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class EditorManager : MonoBehaviour
 {
+    public static EditorManager instance;
+
     PlayerCharAction inputAction;
 
     public Camera mainCam;
@@ -13,10 +15,10 @@ public class EditorManager : MonoBehaviour
     public GameObject prefab1;
     public GameObject prefab2;
 
-    GameObject item;
+    public GameObject item;
 
     public bool editorMode = false;
-    bool instatiated = false;
+    public bool instatiated = false;
 
     private void OnEnable()
     {
@@ -28,10 +30,23 @@ public class EditorManager : MonoBehaviour
         inputAction.Disable();
     }
 
+    ICommand command;
+
+    UIManager ui;
+
     // Start is called before the first frame update
     void Awake()
     {
+<<<<<<< Updated upstream
         inputAction = new PlayerCharAction();
+=======
+        if(instance == null)
+        {
+            instance = this;
+        }
+
+        inputAction = PlayerInputController.controller.inputAction;
+>>>>>>> Stashed changes
 
         inputAction.Editor.EnableEditor.performed += cntxt => SwitchCamera();
 
@@ -40,12 +55,16 @@ public class EditorManager : MonoBehaviour
         inputAction.Editor.Dropitem.performed += cntxt => DropItem();
         mainCam.enabled = true;
         editorCam.enabled = false;
+
+        ui = GetComponent<UIManager>();
     }
 
     private void SwitchCamera()
     {
         mainCam.enabled = !mainCam.enabled;
         editorCam.enabled = !editorCam.enabled;
+
+        ui.ToggleEditorUI();
     }
 
     private void AddItem (int itemId)
@@ -70,6 +89,14 @@ public class EditorManager : MonoBehaviour
     private void DropItem()
     {
 
+<<<<<<< Updated upstream
+=======
+            command = new PlaceItemCommand(item.transform.position, item.transform);
+            CommandInvoker.AddCommand(command);
+
+            instatiated = false;
+        }
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame

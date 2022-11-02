@@ -194,6 +194,27 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+<<<<<<< Updated upstream
+=======
+                },
+                {
+                    ""name"": ""Save"",
+                    ""type"": ""Button"",
+                    ""id"": ""1dff91ab-af7a-4ff3-baf6-cae857b6cf7a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Undo"",
+                    ""type"": ""Button"",
+                    ""id"": ""fc6d70dd-f4bd-4245-9b60-d06518c5ebe0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+>>>>>>> Stashed changes
                 }
             ],
             ""bindings"": [
@@ -240,6 +261,31 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                     ""action"": ""Dropitem"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+<<<<<<< Updated upstream
+=======
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1fa8dfd2-0540-4c0e-ad34-a492cfc6c8d4"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Save"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""20d65208-9ccf-46e3-8823-c8221d9e01a4"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Undo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+>>>>>>> Stashed changes
                 }
             ]
         }
@@ -258,6 +304,11 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         m_Editor_Additem1 = m_Editor.FindAction("Additem1", throwIfNotFound: true);
         m_Editor_Additem2 = m_Editor.FindAction("Additem2", throwIfNotFound: true);
         m_Editor_Dropitem = m_Editor.FindAction("Dropitem", throwIfNotFound: true);
+<<<<<<< Updated upstream
+=======
+        m_Editor_Save = m_Editor.FindAction("Save", throwIfNotFound: true);
+        m_Editor_Undo = m_Editor.FindAction("Undo", throwIfNotFound: true);
+>>>>>>> Stashed changes
     }
 
     public void Dispose()
@@ -378,6 +429,11 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_Editor_Additem1;
     private readonly InputAction m_Editor_Additem2;
     private readonly InputAction m_Editor_Dropitem;
+<<<<<<< Updated upstream
+=======
+    private readonly InputAction m_Editor_Save;
+    private readonly InputAction m_Editor_Undo;
+>>>>>>> Stashed changes
     public struct EditorActions
     {
         private @PlayerCharAction m_Wrapper;
@@ -386,6 +442,11 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         public InputAction @Additem1 => m_Wrapper.m_Editor_Additem1;
         public InputAction @Additem2 => m_Wrapper.m_Editor_Additem2;
         public InputAction @Dropitem => m_Wrapper.m_Editor_Dropitem;
+<<<<<<< Updated upstream
+=======
+        public InputAction @Save => m_Wrapper.m_Editor_Save;
+        public InputAction @Undo => m_Wrapper.m_Editor_Undo;
+>>>>>>> Stashed changes
         public InputActionMap Get() { return m_Wrapper.m_Editor; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -407,6 +468,15 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                 @Dropitem.started -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
                 @Dropitem.performed -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
                 @Dropitem.canceled -= m_Wrapper.m_EditorActionsCallbackInterface.OnDropitem;
+<<<<<<< Updated upstream
+=======
+                @Save.started -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
+                @Save.performed -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
+                @Save.canceled -= m_Wrapper.m_EditorActionsCallbackInterface.OnSave;
+                @Undo.started -= m_Wrapper.m_EditorActionsCallbackInterface.OnUndo;
+                @Undo.performed -= m_Wrapper.m_EditorActionsCallbackInterface.OnUndo;
+                @Undo.canceled -= m_Wrapper.m_EditorActionsCallbackInterface.OnUndo;
+>>>>>>> Stashed changes
             }
             m_Wrapper.m_EditorActionsCallbackInterface = instance;
             if (instance != null)
@@ -423,6 +493,15 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
                 @Dropitem.started += instance.OnDropitem;
                 @Dropitem.performed += instance.OnDropitem;
                 @Dropitem.canceled += instance.OnDropitem;
+<<<<<<< Updated upstream
+=======
+                @Save.started += instance.OnSave;
+                @Save.performed += instance.OnSave;
+                @Save.canceled += instance.OnSave;
+                @Undo.started += instance.OnUndo;
+                @Undo.performed += instance.OnUndo;
+                @Undo.canceled += instance.OnUndo;
+>>>>>>> Stashed changes
             }
         }
     }
@@ -440,5 +519,10 @@ public partial class @PlayerCharAction : IInputActionCollection2, IDisposable
         void OnAdditem1(InputAction.CallbackContext context);
         void OnAdditem2(InputAction.CallbackContext context);
         void OnDropitem(InputAction.CallbackContext context);
+<<<<<<< Updated upstream
+=======
+        void OnSave(InputAction.CallbackContext context);
+        void OnUndo(InputAction.CallbackContext context);
+>>>>>>> Stashed changes
     }
 }

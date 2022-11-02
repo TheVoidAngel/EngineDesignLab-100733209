@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< Updated upstream
   m_Title: Project
+=======
+  m_Title: Game
+>>>>>>> Stashed changes
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +47,13 @@ MonoBehaviour:
     y: 0
     width: 886
     height: 386
+<<<<<<< Updated upstream
   m_MinSize: {x: 602, y: 321}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+  m_MinSize: {x: 600, y: 300}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Stashed changes
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 15}
@@ -75,7 +84,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 90
+=======
+  controlID: 101
+>>>>>>> Stashed changes
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -100,7 +113,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 43
+=======
+  controlID: 45
+>>>>>>> Stashed changes
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,8 +163,8 @@ MonoBehaviour:
     y: 0
     width: 547
     height: 561
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -275,7 +292,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 44
+=======
+  controlID: 46
+>>>>>>> Stashed changes
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,7 +321,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 45
+=======
+  controlID: 47
+>>>>>>> Stashed changes
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -380,9 +405,15 @@ MonoBehaviour:
     m_SearchString: 
   m_ActionsTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 263d6aa6
     m_LastClickedID: -1502986970
     m_ExpandedIDs: 8cda8497263d6aa65557b5a79f4d28cceb78e939a9771342c7d8ab64
+=======
+    m_SelectedIDs: 5273fce0
+    m_LastClickedID: -520326318
+    m_ExpandedIDs: ede976878cda8497263d6aa65557b5a75c2d69b43c7e09c09f4d28cc9076de0510f45523eb78e939e321133ba9771342c7d8ab64
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -434,7 +465,7 @@ MonoBehaviour:
         selectedIndex: -1
         scroll: {x: 0, y: 0}
       - itemId: 82801685
-        selectedIndex: 5
+        selectedIndex: 0
         scroll: {x: 0, y: 0}
       - itemId: -298396491
         selectedIndex: -1
@@ -470,6 +501,15 @@ MonoBehaviour:
         selectedIndex: -1
         scroll: {x: 0, y: 0}
       - itemId: -326202990
+        selectedIndex: -1
+        scroll: {x: 0, y: 0}
+      - itemId: -2062759328
+        selectedIndex: -1
+        scroll: {x: 0, y: 0}
+      - itemId: 403810634
+        selectedIndex: 0
+        scroll: {x: 0, y: 0}
+      - itemId: -491560259
         selectedIndex: -1
         scroll: {x: 0, y: 0}
     m_ManualPathEditMode: 0
@@ -555,6 +595,14 @@ MonoBehaviour:
       \"type\": \"Button\",\n                    \"id\": \"42142165-7890-4c2c-98bb-f4194bdfa6b1\",\n                   
       \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
       \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
+      },\n                {\n                    \"name\": \"Save\",\n                   
+      \"type\": \"Button\",\n                    \"id\": \"1dff91ab-af7a-4ff3-baf6-cae857b6cf7a\",\n                   
+      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
+      },\n                {\n                    \"name\": \"Undo\",\n                   
+      \"type\": \"Button\",\n                    \"id\": \"fc6d70dd-f4bd-4245-9b60-d06518c5ebe0\",\n                   
+      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
       }\n            ],\n            \"bindings\": [\n                {\n                   
       \"name\": \"\",\n                    \"id\": \"ddba8077-e13a-488d-a3a6-510c213ea308\",\n                   
       \"path\": \"<Keyboard>/e\",\n                    \"interactions\": \"\",\n                   
@@ -575,6 +623,16 @@ MonoBehaviour:
       \"path\": \"<Mouse>/rightButton\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Dropitem\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"1fa8dfd2-0540-4c0e-ad34-a492cfc6c8d4\",\n                   
+      \"path\": \"<Keyboard>/f\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"Save\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"20d65208-9ccf-46e3-8823-c8221d9e01a4\",\n                   
+      \"path\": \"<Keyboard>/z\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"Undo\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": false\n                }\n            ]\n        }\n   
       ],\n    \"controlSchemes\": []\n}"
     m_IsDirty: 0
@@ -697,22 +755,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets/_Scripts
+=======
+    - Assets/_Materials
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< Updated upstream
   - Assets/_Scripts
+=======
+  - Assets/_Materials
+>>>>>>> Stashed changes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Joshua\Documents\GitHub\EngineDesignLab-100733209\NewUnityYear3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: d25d0000
     m_LastClickedID: 24018
     m_ExpandedIDs: 00000000765d000000ca9a3b
+=======
+    m_SelectedIDs: 9e5e0000
+    m_LastClickedID: 24222
+    m_ExpandedIDs: 00000000425e00009c5e000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +812,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000765d0000
+=======
+    m_ExpandedIDs: 00000000425e0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -771,15 +847,24 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000ec800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
+<<<<<<< Updated upstream
       m_Name: PlayerInputController
       m_OriginalName: PlayerInputController
+=======
+      m_Name: UIManager
+      m_OriginalName: UIManager
+>>>>>>> Stashed changes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< Updated upstream
       m_UserData: 24346
+=======
+      m_UserData: 27844
+>>>>>>> Stashed changes
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -868,9 +953,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
       m_SelectedIDs: 7c0d0000
       m_LastClickedID: 0
       m_ExpandedIDs: 30fbffff0a5c0000
+=======
+      m_SelectedIDs: 986b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5ccfffffd2d0ffffaefaffffb6faffffbafaffffbefaffffc2faffff02fbffff06fbffff0afbffff0efbffff12fbffff30fbffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1152,9 +1243,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 2.6887846, y: 16.04406, z: 2.819106}
     speed: 2
     m_Value: {x: 2.6887846, y: 16.04406, z: 2.819106}
+=======
+    m_Target: {x: -18.464464, y: 14.647312, z: 16.0044}
+    speed: 2
+    m_Value: {x: -18.464464, y: 14.647312, z: 16.0044}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1200,6 +1297,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
     m_Target: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
     speed: 2
     m_Value: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
@@ -1207,6 +1305,15 @@ MonoBehaviour:
     m_Target: 15.377329
     speed: 2
     m_Value: 15.377329
+=======
+    m_Target: {x: 0.052884396, y: -0.37124714, z: 0.021183884, w: 0.9267899}
+    speed: 2
+    m_Value: {x: 0.05288415, y: -0.3712454, z: 0.021183785, w: 0.9267856}
+  m_Size:
+    m_Target: 46.3243
+    speed: 2
+    m_Value: 46.3243
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2

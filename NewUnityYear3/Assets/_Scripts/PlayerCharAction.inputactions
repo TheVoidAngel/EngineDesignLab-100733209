@@ -172,6 +172,27 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+<<<<<<< Updated upstream
+=======
+                },
+                {
+                    "name": "Save",
+                    "type": "Button",
+                    "id": "1dff91ab-af7a-4ff3-baf6-cae857b6cf7a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Undo",
+                    "type": "Button",
+                    "id": "fc6d70dd-f4bd-4245-9b60-d06518c5ebe0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+>>>>>>> Stashed changes
                 }
             ],
             "bindings": [
@@ -218,6 +239,31 @@
                     "action": "Dropitem",
                     "isComposite": false,
                     "isPartOfComposite": false
+<<<<<<< Updated upstream
+=======
+                },
+                {
+                    "name": "",
+                    "id": "1fa8dfd2-0540-4c0e-ad34-a492cfc6c8d4",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Save",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20d65208-9ccf-46e3-8823-c8221d9e01a4",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Undo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+>>>>>>> Stashed changes
                 }
             ]
         }
